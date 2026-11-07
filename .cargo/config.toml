@@ -1,0 +1,4 @@
+[env]
+# Keep native TLS C objects and Rust consistent with the Swift/macOS 26 target.
+# Ignored by non-Apple compilation targets.
+MACOSX_DEPLOYMENT_TARGET = { value = "26.0", force = true }

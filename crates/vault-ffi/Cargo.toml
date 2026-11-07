@@ -1,0 +1,32 @@
+[package]
+name = "vault-ffi"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+
+[lib]
+crate-type = ["lib", "staticlib", "cdylib"]
+
+[[bin]]
+name = "uniffi-bindgen"
+path = "src/bin/uniffi-bindgen.rs"
+required-features = ["bindgen"]
+
+[features]
+bindgen = ["uniffi/cli"]
+
+[dependencies]
+vault-core = { path = "../vault-core" }
+vault-api = { path = "../vault-api" }
+vault-storage = { path = "../vault-storage" }
+zeroize.workspace = true
+subtle.workspace = true
+uniffi.workspace = true
+
+[lints]
+workspace = true
+
+[dev-dependencies]
+serde_json.workspace = true
+tempfile = "3"

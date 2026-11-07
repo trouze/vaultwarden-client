@@ -1,0 +1,7 @@
+// Copy to Signing.local.xcconfig (Git-ignored).
+// Find your Personal Team ID locally in Xcode; do not post it or credentials.
+DEVELOPMENT_TEAM =
+
+// Use a unique reverse-DNS prefix authorized for your team, if the public
+// provisional app ID is already registered. Do not put a live server address here.
+BUNDLE_ID_PREFIX = org.vaultwardenclient

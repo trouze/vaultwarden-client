@@ -1,0 +1,6 @@
+// Optional local Apple Development signing. No paid Developer ID requirement.
+// Copy the template and fill signing details locally; never commit that file.
+// Rust packaging is Apple Silicon-only until an Intel slice is implemented.
+ARCHS = arm64
+ONLY_ACTIVE_ARCH = YES
+#include? "Signing.local.xcconfig"

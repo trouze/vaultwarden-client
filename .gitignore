@@ -1,0 +1,19 @@
+# Build output / generated FFI
+/target/
+/build/
+/apps/macos/VaultwardenClient.xcodeproj/
+
+# Machine-local endpoints, credentials, and signing configuration
+.env
+.env.*
+!.env.example
+*.local.xcconfig
+*.local.json
+*.local.toml
+*.p12
+*.p8
+
+# IDE / OS state
+.DS_Store
+xcuserdata/
+*.xcuserstate

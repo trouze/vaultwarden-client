@@ -1,0 +1,4 @@
+[bindings.swift]
+module_name = "VaultCore"
+ffi_module_name = "VaultCoreFFI"
+generate_module_map = true
